@@ -15,7 +15,7 @@ public class ShopApplication extends SpringBootServletInitializer {
         return application.sources(ShopApplication.class);
     }
 	
-    //Main function of the project
+ 
     public static void main(String[] args) {
         SpringApplication.run(ShopApplication.class, args);
     }
