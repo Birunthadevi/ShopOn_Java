@@ -609,7 +609,7 @@
 					<execution>
 						<id>attach-javadocs</id>
 						<goals>
-							<goal>jar</goal>
+							<goal>war</goal>
 						</goals>
 					</execution>
 				</executions>
