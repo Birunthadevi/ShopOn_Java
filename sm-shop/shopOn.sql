@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
 --
--- Host: localhost    Database: salesmanager_dev
+-- Host: localhost    Database: shopon
 -- ------------------------------------------------------
 -- Server version	8.0.19
 
