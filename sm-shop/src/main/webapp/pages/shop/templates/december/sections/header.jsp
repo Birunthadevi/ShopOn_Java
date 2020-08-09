@@ -110,7 +110,7 @@ response.setDateHeader ("Expires", -1);
 			0
 		{{/code}}
 		{{#code}}
-           {{quantity}}
+          0
 		{{/code}}
 </script>
 
