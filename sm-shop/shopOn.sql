@@ -400,7 +400,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (1,_binary '\0',NULL,NULL,NULL,'358 Du Languadoc','Boucherville','CSTI Consulting','Leonardo','DiCaprio',NULL,NULL,'J4B-8J9',NULL,NULL,'CSTI Consulting',NULL,NULL,'2020-06-26 10:05:19','358 Du Languadoc','Boucherville',NULL,'Leonardo','DiCaprio','J4B-8J9',NULL,NULL,'test@shopizer.com','M','shopizer','$2a$10$I3rPcxtOE33duD6ZQFnA2.TwcKSv9q31hC5.KGGbbee/UT9y4jekS',NULL,13,8,1,13,8,1);
+INSERT INTO `customer` VALUES (1,_binary '\0',NULL,NULL,NULL,'358 Du Languadoc','Boucherville','CSTI Consulting','Leonardo','DiCaprio',NULL,NULL,'J4B-8J9',NULL,NULL,'CSTI Consulting',NULL,NULL,'2020-06-26 10:05:19','358 Du Languadoc','Boucherville',NULL,'Leonardo','DiCaprio','J4B-8J9',NULL,NULL,'test@shopizer.com','M','shopizer','$2a$10$xRdrmbrQbDC3FM/JD/hdSew4wBcY51d4M2gJtRgYDwXDMbXi05k2m',NULL,13,8,1,13,8,1);
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -940,7 +940,7 @@ CREATE TABLE `merchant_configuration` (
 
 LOCK TABLES `merchant_configuration` WRITE;
 /*!40000 ALTER TABLE `merchant_configuration` DISABLE KEYS */;
-INSERT INTO `merchant_configuration` VALUES (1,_binary '\0','2020-06-26 10:05:16','2020-06-26 15:07:47',NULL,'CONFIG','CONFIG','{\"allowPurchaseItems\":true,\"displayContactUs\":true,\"displayCustomerAgreement\":true,\"defaultSearchConfigPath\":{},\"displayCustomerSection\":true,\"displayAddToCartOnFeaturedItems\":true,\"testMode\":false,\"displayStoreAddress\":true,\"displaySearchBox\":true,\"debugMode\":false,\"useDefaultSearchConfig\":{}}',1),(50,_binary '\0','2020-06-26 12:53:17','2020-06-26 14:53:45',NULL,'SUPPORTED_CNTR','INTEGRATION','[\"IN\",\"AU\",\"CN\"]',1),(51,_binary '\0','2020-06-26 12:53:20','2020-06-26 14:55:03',NULL,'SHIPPING_CONFIG','INTEGRATION','{\"boxLength\":0,\"orderTotalFreeShipping\":null,\"shipBaseType\":\"SHIPPING\",\"shipOptionPriceType\":\"ALL\",\"maxWeight\":0.0,\"boxHeight\":0,\"shipFreeType\":\"NATIONAL\",\"taxOnShipping\":false,\"shipPackageType\":\"ITEM\",\"freeShippingEnabled\":true,\"boxWeight\":0.0,\"shipType\":\"INTERNATIONAL\",\"boxWidth\":0,\"handlingFees\":null,\"shipDescription\":\"SHORT_DESCRIPTION\"}',1);
+INSERT INTO `merchant_configuration` VALUES (1,_binary '\0','2020-06-26 10:05:16','2020-08-09 21:58:32',NULL,'CONFIG','CONFIG','{\"allowPurchaseItems\":true,\"displayContactUs\":false,\"displayCustomerAgreement\":true,\"defaultSearchConfigPath\":{},\"displayCustomerSection\":true,\"displayAddToCartOnFeaturedItems\":true,\"testMode\":false,\"displayStoreAddress\":true,\"displaySearchBox\":false,\"debugMode\":false,\"useDefaultSearchConfig\":{}}',1),(50,_binary '\0','2020-06-26 12:53:17','2020-08-09 22:01:16',NULL,'SUPPORTED_CNTR','INTEGRATION','[\"IN\",\"AU\"]',1),(51,_binary '\0','2020-06-26 12:53:20','2020-08-09 22:01:54',NULL,'SHIPPING_CONFIG','INTEGRATION','{\"boxLength\":0,\"orderTotalFreeShipping\":0.00,\"shipBaseType\":\"SHIPPING\",\"shipOptionPriceType\":\"ALL\",\"maxWeight\":0.0,\"boxHeight\":0,\"shipFreeType\":\"INTERNATIONAL\",\"taxOnShipping\":false,\"shipPackageType\":\"ITEM\",\"freeShippingEnabled\":true,\"boxWeight\":0.0,\"shipType\":\"INTERNATIONAL\",\"boxWidth\":0,\"handlingFees\":null,\"shipDescription\":\"SHORT_DESCRIPTION\"}',1),(100,_binary '\0','2020-08-09 22:00:48','2020-08-09 22:01:06',NULL,'weightBased','INTEGRATION','{\"moduleCode\":\"weightBased\",\"active\":true,\"regions\":[{\"customRegionName\":\"india\"}]}',1),(101,_binary '\0','2020-08-09 22:01:06','2020-08-09 22:01:06',NULL,'SHIPPING','INTEGRATION','df02614ab6600db0eb4d78e2c4df55740a3632c23495d207674f0bdef76266c558848e0339163624c5fc30cda898f9b1',1),(102,_binary '\0','2020-08-09 22:02:52','2020-08-09 22:02:52',NULL,'PAYMENT','INTEGRATION','df02614ab6600db0eb4d78e2c4df5574f9ba1903c78f9da01dded48dcbe5fa1395559a2eb8160dd8615b22e900932a7bac035d6eaa57b1ec05f4cedf94c2d8054819918ba0b244669d6987678949825eee5e06278ad1acdb473840b69721531c51e62999ba70c79fdd7257895873ce0ee04309e49440c5940bb98d35a29943cfb0affa37507588224e82b7ed434608f591332c17a8613edc99398af6fde1beedb569de78add9af5196304fd2c4c2d0f22e7c7cda4ca5c52dee8e3bd8257e9b78ebee78456bf31ddfef7d44b1ece3564655c33f064411e6897c54ff534595f99154b60deb85cbead4f4fd0dbbbe4be101658bfd22c81703649cc72f0c16f14de08912e651f1de15a020d9819cc24d58c63530f15dc6bb9fe9efff73dc54bb2876e0a0f9b3d197f2395ee70d1306ced10908b651864a7ad1fd679bfba2fed9f731cb7a1997db7b58927419933cd1406e5abb202b14bb0243f9aca6e91fcce5f248d0d6b2b446580aba48434b2d0d80638d3479f01430920869d766595f8b2564c533e6783c4d50a3ff1461b3d1eb92cbc1867fcebcbeb40db7e838089d709e568b36210ed23a50cd79f307332fe506f0fd63f67219ccd618a41eda66bd863cd517d11f9b8c93e435b64678ca60c915ae096dde7f18ea72c11773f59dd042a89b453068eb05802374d018f5039823ab3305bdba21fba091ed3524726a5211095e270d60bc7313d2c3d76504e6a71795481944425ae4c54b44c82c1e0e7f8a7a2485aeb129f6b3da0f715239f7da45a7520ab34202b1e9d3a027eb52c9ee4c018a636f662604d3d7f6ecb1fa469756f5dbbdba5b60699c0e4ef2476f81b17162ad070ff31024270c21ef69ae9020d9a5af361c9c7fa39f1589b6b2b0eaad44b5afef927f027e56c455e842f1e4d200ca7940269f08e3afe161b30f756499078c3ebbc9bd850ecdb3aae08c23f6f4271401577efd61837bde6f0f315e6ad5bb10027157e3b49091903fdc60f9d9d76820063f2e8fece84d82ba0a27495ce7cca1a6a78fc221fc67eb415e472e48217d5fc00abcd3ee98da3f745859e8da97c97aebc751e36c7642d4ff74adc8fa6f778c477029a8f1361fa9ee7c8456242f9913c26e221d87940433fc8b9e3c3748eb783aeb47eb3f5f0bdee71c05393b6ae8530e1e7655d66563738037c563019f3ab9c309a837e12db82bbaa543b9bdde9db98fe2eb825d8aff5d219d4ddefc245ba1bf514772070e78c9bf0a2f43bf1cb46b5eceba92ee3b2733cf0d8e7e82c5f6d9e61a47d7a69797d8c8f6eab5cc9f3217a4268ab3993b96320f469418b2f058ce27b5ad0e0ed99ca946e6cae4cfe0eb390959521e1c163e2d86fec33c3743392dfa770747151c04fd40db75b630d7ee1cbf5ea1bcc03f6149f2b09d738520b22472f0e880476e15a4e2a1558868add2d440117d4a89a1ab2f1004725fb54aaf100e13c19fb1ea7acd111d398c52183399cc504103dc6dedbfe118ff3d2586e33af081',1);
 /*!40000 ALTER TABLE `merchant_configuration` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1055,7 +1055,7 @@ CREATE TABLE `merchant_store` (
 
 LOCK TABLES `merchant_store` WRITE;
 /*!40000 ALTER TABLE `merchant_store` DISABLE KEYS */;
-INSERT INTO `merchant_store` VALUES (1,NULL,NULL,NULL,'DEFAULT',NULL,_binary '\0','localhost:8080','2020-06-26',NULL,_binary '\0','CM','shopon@skillassure.com','ShopOn Logo-1.png','december','#184/185, White Field, Kundalahalli','Bangalore','ShopOn','9876543210','560066','Karnataka',_binary '\0','KG',37,132,1,NULL,NULL);
+INSERT INTO `merchant_store` VALUES (1,NULL,NULL,NULL,'DEFAULT',NULL,_binary '\0','localhost:8080','2020-06-26',NULL,_binary '\0','CM','shopon@skillassure.com','ShopOn Logo-1.png','december','#184/185, 2nd Street, White Field','Bangalore','ShopOn','9876549898','560066','Karnataka',_binary '\0','KG',37,132,1,NULL,NULL);
 /*!40000 ALTER TABLE `merchant_store` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1597,7 +1597,7 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
-INSERT INTO `product` VALUES (1,'2020-06-26 10:05:16','2020-07-29 19:33:52',NULL,_binary '',NULL,'2020-06-26 10:05:16',_binary '\0',10.00,_binary '\0',3.00,NULL,3.50,1,_binary '',_binary '\0',NULL,6.00,NULL,NULL,NULL,NULL,'TB12345',0,5,1,NULL,NULL,1),(2,'2020-06-26 10:05:17','2020-06-26 10:05:17',NULL,_binary '',NULL,'2020-06-26 10:05:17',_binary '\0',4.00,_binary '\0',3.00,NULL,NULL,NULL,_binary '',_binary '\0',NULL,1.00,NULL,NULL,NULL,NULL,'TB2468',0,4,1,NULL,NULL,1),(3,'2020-06-26 10:05:18','2020-06-26 10:05:18',NULL,_binary '',NULL,'2020-06-26 10:05:18',_binary '\0',4.00,_binary '\0',3.00,NULL,NULL,NULL,_binary '',_binary '\0',NULL,1.00,NULL,NULL,NULL,NULL,'NB1111',0,2,1,NULL,NULL,1),(4,'2020-06-26 10:05:18','2020-06-26 10:05:18',NULL,_binary '',NULL,'2020-06-26 10:05:18',_binary '\0',4.00,_binary '\0',3.00,NULL,NULL,NULL,_binary '',_binary '\0',NULL,1.00,NULL,NULL,NULL,NULL,'SF333345',0,3,1,NULL,NULL,1),(5,'2020-06-26 10:05:18','2020-06-26 10:05:18',NULL,_binary '',NULL,'2020-06-26 10:05:18',_binary '\0',4.00,_binary '\0',3.00,NULL,NULL,NULL,_binary '',_binary '\0',NULL,1.00,NULL,NULL,NULL,NULL,'SF333346',0,4,1,NULL,NULL,1);
+INSERT INTO `product` VALUES (1,'2020-06-26 10:05:16','2020-07-29 19:33:52',NULL,_binary '',NULL,'2020-06-26 10:05:16',_binary '\0',10.00,_binary '\0',3.00,NULL,3.50,1,_binary '',_binary '\0',NULL,6.00,NULL,NULL,NULL,NULL,'TB12345',0,5,1,NULL,NULL,1),(2,'2020-06-26 10:05:17','2020-06-26 10:05:17',NULL,_binary '',NULL,'2020-06-26 10:05:17',_binary '\0',4.00,_binary '\0',3.00,NULL,NULL,NULL,_binary '',_binary '\0',NULL,1.00,NULL,NULL,NULL,NULL,'TB2468',0,4,1,NULL,NULL,1),(3,'2020-06-26 10:05:18','2020-06-26 10:05:18',NULL,_binary '',NULL,'2020-06-26 10:05:18',_binary '\0',4.00,_binary '\0',3.00,NULL,NULL,NULL,_binary '',_binary '\0',NULL,1.00,NULL,NULL,NULL,NULL,'NB1111',0,2,1,NULL,NULL,1),(4,'2020-06-26 10:05:18','2020-06-26 10:05:18',NULL,_binary '',NULL,'2020-06-26 10:05:18',_binary '\0',4.00,_binary '\0',3.00,NULL,NULL,NULL,_binary '',_binary '\0',NULL,1.00,NULL,NULL,NULL,NULL,'SF333345',0,3,1,NULL,NULL,1),(5,'2020-06-26 10:05:18','2020-08-09 22:05:55',NULL,_binary '',NULL,'2020-06-26 10:05:18',_binary '\0',4.00,_binary '\0',3.00,NULL,NULL,NULL,_binary '',_binary '\0',NULL,1.00,NULL,NULL,NULL,NULL,'SF333346',0,4,1,NULL,NULL,1);
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2243,7 +2243,7 @@ CREATE TABLE `shiping_origin` (
 
 LOCK TABLES `shiping_origin` WRITE;
 /*!40000 ALTER TABLE `shiping_origin` DISABLE KEYS */;
-INSERT INTO `shiping_origin` VALUES (1,_binary '','','Bengaluru','560066','Karnataka',37,1,NULL);
+INSERT INTO `shiping_origin` VALUES (1,_binary '\0','','Bengaluru','560066','Karnataka',37,1,NULL);
 /*!40000 ALTER TABLE `shiping_origin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2327,7 +2327,7 @@ CREATE TABLE `shopping_cart` (
 
 LOCK TABLES `shopping_cart` WRITE;
 /*!40000 ALTER TABLE `shopping_cart` DISABLE KEYS */;
-INSERT INTO `shopping_cart` VALUES (1,'2020-06-26 10:14:34','2020-06-26 10:14:34',NULL,NULL,'0:0:0:0:0:0:0:1','f41fbb6b56f949ffbb6b72952a92eee8',1),(50,'2020-07-29 12:04:54','2020-07-29 12:04:55',NULL,NULL,'0:0:0:0:0:0:0:1','cab10ac62466447fa20d4ff51c4bb0ed',1),(100,'2020-07-30 22:03:33','2020-07-30 22:03:33',NULL,NULL,'0:0:0:0:0:0:0:1','88b9611c9ddc4c6382e038f16e1a110f',1);
+INSERT INTO `shopping_cart` VALUES (1,'2020-06-26 10:14:34','2020-06-26 10:14:34',NULL,NULL,'0:0:0:0:0:0:0:1','f41fbb6b56f949ffbb6b72952a92eee8',1),(50,'2020-07-29 12:04:54','2020-07-29 12:04:55',NULL,NULL,'0:0:0:0:0:0:0:1','cab10ac62466447fa20d4ff51c4bb0ed',1),(100,'2020-07-30 22:03:33','2020-07-30 22:03:33',NULL,NULL,'0:0:0:0:0:0:0:1','88b9611c9ddc4c6382e038f16e1a110f',1),(150,'2020-08-09 22:04:45','2020-08-09 22:04:45',NULL,NULL,'0:0:0:0:0:0:0:1','4791a3ebd2ce4ca3b38706106e740eff',1);
 /*!40000 ALTER TABLE `shopping_cart` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2387,7 +2387,7 @@ CREATE TABLE `shopping_cart_item` (
 
 LOCK TABLES `shopping_cart_item` WRITE;
 /*!40000 ALTER TABLE `shopping_cart_item` DISABLE KEYS */;
-INSERT INTO `shopping_cart_item` VALUES (1,'2020-06-26 10:14:34','2020-06-29 11:10:48',NULL,6,1,1),(50,'2020-06-26 11:55:00','2020-06-29 11:10:48',NULL,3,1,1),(51,'2020-06-29 09:54:36','2020-06-29 11:10:48',NULL,1,3,1),(52,'2020-06-29 11:04:45','2020-06-29 11:04:45',NULL,2,1,1),(100,'2020-07-29 12:04:55','2020-07-29 12:04:55',NULL,1,1,50),(150,'2020-07-30 22:03:33','2020-07-30 22:03:33',NULL,5,1,100);
+INSERT INTO `shopping_cart_item` VALUES (1,'2020-06-26 10:14:34','2020-06-29 11:10:48',NULL,6,1,1),(50,'2020-06-26 11:55:00','2020-06-29 11:10:48',NULL,3,1,1),(51,'2020-06-29 09:54:36','2020-06-29 11:10:48',NULL,1,3,1),(52,'2020-06-29 11:04:45','2020-06-29 11:04:45',NULL,2,1,1),(100,'2020-07-29 12:04:55','2020-07-29 12:04:55',NULL,1,1,50),(150,'2020-07-30 22:03:33','2020-07-30 22:03:33',NULL,5,1,100),(200,'2020-08-09 22:04:45','2020-08-09 22:04:45',NULL,5,1,150);
 /*!40000 ALTER TABLE `shopping_cart_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2441,7 +2441,7 @@ CREATE TABLE `sm_sequencer` (
 
 LOCK TABLES `sm_sequencer` WRITE;
 /*!40000 ALTER TABLE `sm_sequencer` DISABLE KEYS */;
-INSERT INTO `sm_sequencer` VALUES ('category_description_seq',15),('CATEGORY_SEQ_NEXT_VAL',1),('content_description_seq',7),('CONTENT_SEQ_NEXT_VAL',1),('country_description_seq',191),('COUNTRY_SEQ_NEXT_VAL',2),('CURRENCY_SEQ_NEXT_VAL',4),('CUSTOMER_SEQ_NEXT_VAL',1),('GROUP_SEQ_NEXT_VAL',1),('LANG_SEQ_NEXT_VAL',1),('manufacturer_description_seq',7),('MANUFACT_SEQ_NEXT_VAL',1),('MERCH_CONF_SEQ_NEXT_VAL',2),('MOD_CONF_SEQ_NEXT_VAL',1),('OPTIN_SEQ_NEXT_VAL',1),('ORDER_ID_SEQ_NEXT_VAL',1),('ORDER_PRD_PRICE_ID_NEXT_VAL',1),('ORDER_PRODUCT_DL_ID_NEXT_VALUE',1),('ORDER_PRODUCT_ID_NEXT_VALUE',1),('ORDER_TOTAL_ID_NEXT_VALUE',1),('PERMISSION_SEQ_NEXT_VAL',1),('PRD_TYPE_SEQ_NEXT_VAL',1),('PRODUCT_AVAIL_SEQ_NEXT_VAL',2),('product_description_seq',9),('PRODUCT_IMG_SEQ_NEXT_VAL',1),('product_price_description_seq',9),('PRODUCT_PRICE_SEQ_NEXT_VAL',2),('PRODUCT_RELATION_SEQ_NEXT_VAL',1),('product_review_description_seq',2),('PRODUCT_REVIEW_SEQ_NEXT_VAL',1),('PRODUCT_SEQ_NEXT_VAL',2),('SHP_CRT_ITM_SEQ_NEXT_VAL',4),('SHP_CRT_SEQ_NEXT_VAL',3),('SHP_ORIG_SEQ_NEXT_VAL',1),('STATUS_HIST_ID_NEXT_VALUE',1),('STORE_SEQ_NEXT_VAL',1),('SYST_CONF_SEQ_NEXT_VAL',1),('TX_CLASS_SEQ_NEXT_VAL',1),('USER_SEQ_NEXT_VAL',1),('zone_description_seq',377),('ZONE_SEQ_NEXT_VAL',4);
+INSERT INTO `sm_sequencer` VALUES ('category_description_seq',15),('CATEGORY_SEQ_NEXT_VAL',1),('content_description_seq',7),('CONTENT_SEQ_NEXT_VAL',1),('country_description_seq',191),('COUNTRY_SEQ_NEXT_VAL',2),('CURRENCY_SEQ_NEXT_VAL',4),('CUSTOMER_SEQ_NEXT_VAL',1),('GROUP_SEQ_NEXT_VAL',1),('LANG_SEQ_NEXT_VAL',1),('manufacturer_description_seq',7),('MANUFACT_SEQ_NEXT_VAL',1),('MERCH_CONF_SEQ_NEXT_VAL',3),('MOD_CONF_SEQ_NEXT_VAL',1),('OPTIN_SEQ_NEXT_VAL',1),('ORDER_ID_SEQ_NEXT_VAL',1),('ORDER_PRD_PRICE_ID_NEXT_VAL',1),('ORDER_PRODUCT_DL_ID_NEXT_VALUE',1),('ORDER_PRODUCT_ID_NEXT_VALUE',1),('ORDER_TOTAL_ID_NEXT_VALUE',1),('PERMISSION_SEQ_NEXT_VAL',1),('PRD_TYPE_SEQ_NEXT_VAL',1),('PRODUCT_AVAIL_SEQ_NEXT_VAL',2),('product_description_seq',9),('PRODUCT_IMG_SEQ_NEXT_VAL',1),('product_price_description_seq',9),('PRODUCT_PRICE_SEQ_NEXT_VAL',2),('PRODUCT_RELATION_SEQ_NEXT_VAL',1),('product_review_description_seq',2),('PRODUCT_REVIEW_SEQ_NEXT_VAL',1),('PRODUCT_SEQ_NEXT_VAL',2),('SHP_CRT_ITM_SEQ_NEXT_VAL',5),('SHP_CRT_SEQ_NEXT_VAL',4),('SHP_ORIG_SEQ_NEXT_VAL',1),('STATUS_HIST_ID_NEXT_VALUE',1),('STORE_SEQ_NEXT_VAL',1),('SYST_CONF_SEQ_NEXT_VAL',1),('TX_CLASS_SEQ_NEXT_VAL',1),('USER_SEQ_NEXT_VAL',1),('zone_description_seq',377),('ZONE_SEQ_NEXT_VAL',4);
 /*!40000 ALTER TABLE `sm_sequencer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2692,7 +2692,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,_binary '','admin@shopizer.com','admin@shopizer.com','$2a$10$xRdrmbrQbDC3FM/JD/hdSew4wBcY51d4M2gJtRgYDwXDMbXi05k2m',NULL,NULL,NULL,'2020-06-26 10:05:16','2020-07-30 22:32:39',NULL,'Administrator','2020-07-30 21:44:21','User','2020-07-30 22:32:39',NULL,NULL,NULL,NULL,1);
+INSERT INTO `user` VALUES (1,_binary '','admin@shopizer.com','admin@shopizer.com','$2a$10$xRdrmbrQbDC3FM/JD/hdSew4wBcY51d4M2gJtRgYDwXDMbXi05k2m',NULL,NULL,NULL,'2020-06-26 10:05:16','2020-08-09 21:58:03',NULL,'Administrator','2020-07-30 22:32:39','User','2020-08-09 21:58:03',NULL,NULL,NULL,NULL,1);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2827,4 +2827,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-30 22:45:21
+-- Dump completed on 2020-08-09 22:07:30

@@ -88,8 +88,8 @@ response.setDateHeader ("Expires", -1);
 
 				</div>
                  </c:when>
-                 <c:otherwise>
-                 
+                 <c:otherwise>   
+                                           
                  </c:otherwise>
                
                </c:choose>

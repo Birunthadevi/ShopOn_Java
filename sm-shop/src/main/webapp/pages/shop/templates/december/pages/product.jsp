@@ -97,7 +97,7 @@
 													<strong><s:message code="label.product.available"
 															text="Availability" /></strong>:&nbsp;<span><c:choose>
 															<c:when test="${product.quantity>0}">
-																<span itemprop="availability" content="in_stock">${product.quantity}</span>
+																<span itemprop="availability" content="in_stock">0</span>
 															</c:when>
 															<c:otherwise>
 																<span itemprop="availability" content="out_of_stock"><s:message

@@ -807,6 +807,8 @@ public class OrderFacadeImpl implements OrderFacade {
 			
 			//validate shipping
 			if(shippingService.requiresShipping(order.getShoppingCartItems(), store) && order.getSelectedShippingOption()==null) {
+				System.out.println(shippingService.requiresShipping(order.getShoppingCartItems(), store));
+				System.out.println(order.getSelectedShippingOption()==null);
 				ServiceException serviceException = new ServiceException(ServiceException.EXCEPTION_VALIDATION,"shipping.required");
 				throw serviceException;
 			}

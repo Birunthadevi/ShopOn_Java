@@ -461,7 +461,7 @@ public class ReadableProductPopulator extends
 			//availability
 			for(ProductAvailability availability : source.getAvailabilities()) {
 				//if(availability.getRegion().equals(Constants.ALL_REGIONS)) {//TODO REL 2.1 accept a region
-					target.setQuantity(availability.getProductQuantity());
+				
 					target.setQuantityOrderMaximum(availability.getProductQuantityOrderMax());
 					target.setQuantityOrderMinimum(availability.getProductQuantityOrderMin());
 					if(availability.getProductQuantity().intValue() > 0 && target.isAvailable()) {
