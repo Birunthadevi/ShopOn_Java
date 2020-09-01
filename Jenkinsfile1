@@ -55,6 +55,17 @@ pipeline{
     }
     
     
+     stage('Deploy') {
+            steps {
+                echo 'Deploying the application ...'
+                 ansiblePlaybook(
+                        inventory: 'inventory.txt',
+                        playbook: 'ansible-playbook.yml',
+                        disableHostKeyChecking: true,
+                        colorized: true
+                  )
+    
+    
       
         }
     }
