@@ -26,6 +26,12 @@
             login_host: '0.0.0.0'
             login_user: root
             login_password: root
+            
+     - name: Set mysql user privileges
+       mysql_user:
+            name: root
+            priv: "shopon.*:ALL"
+            state: present 
   
   
 
