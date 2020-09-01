@@ -1,0 +1,13 @@
+version: "2"
+services:
+   mysql:
+     image: mysql
+     env:
+       
+     
+     
+     
+   shopon:  
+     image: madhurk/shopon
+     links:
+       - mysql:mysql
