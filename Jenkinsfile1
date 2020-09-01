@@ -1,0 +1,63 @@
+pipeline{
+    agent any
+    tools{
+       maven 'maven'
+    }
+    environment {
+    registry = "madhurk/shopon"
+    registryCredential = 'madhurk'
+    dockerImage = ''
+  }
+    stages{
+        stage("Check out"){
+        steps{
+    
+        git credentialsId: 'madhursk', url: 'https://github.com/madhursk/AmdJul2020-Java.git', branch: 'master'
+}
+        }
+    
+     stage ('Build') {
+      steps{
+        echo "Building Project"
+        sh 'mvn package -DskipTests'
+      }
+    }
+    
+    
+     stage ('Archive') {
+      steps{
+        echo "Archiving Project"
+        archiveArtifacts artifacts: '**/*.war', followSymlinks: false
+      }
+    }
+    
+    
+     stage ('Build Docker Image') {
+      steps{
+        echo "Building Docker Image"
+        script {
+          dockerImage = docker.build("${registry}", "-f ./sm-shop/Dockerfile .") 
+          
+        }
+      }
+     }
+        
+     
+    stage ('Push Docker Image') {
+      steps{
+        echo "Pushing Docker Image"
+        script {
+          docker.withRegistry( '', registryCredential ) {
+              dockerImage.push()
+          }
+        }
+      }
+    }
+    
+    
+      
+        }
+    }
+
+
+    
