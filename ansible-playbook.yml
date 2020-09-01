@@ -1,16 +1,28 @@
-- name: Start a mysql container and link
+- name: Playbook 
   hosts: test
-  docker_container:
-    name: mysql
-    image: mysql
-    env:
-      MYSQL_DATABASE: shopon
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root4312
-  shell: ./sm-shop/ShopOn.sql
+  tasks:
+    - name: Start the mysql container
+      docker_container:
+              name: database
+              image: mysql
+              state: started
+              ports:
+                - 3306: 3306
+              volumes:
+                   - /var/lib/mysql:/var/lib/mysql  
+              env:
+                MYSQL_DATABASE: shopon
+                MYSQL_USER: root
+                MYSQL_PASSWORD: root4312
+      shell: ./sm-shop/ShopOn.sql
   
   
- - name: Deploy on the test server
-   hosts: test
-   
+  tasks: 
+     - name: Deploy on the test server
+       docker_container:
+             name: shopon
+             image: madhurk/shopon
+             pull: true
+             links:
+                - database 
       
