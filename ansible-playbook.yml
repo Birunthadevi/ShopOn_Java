@@ -1,6 +1,6 @@
 ---
  - name: Playbook 
-   hosts: test
+   hosts: localhost
    tasks: 
      - name: Run the mysql container
        docker_container:
