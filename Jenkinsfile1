@@ -9,12 +9,26 @@ pipeline{
     dockerImage = ''
   }
     stages{
+    
         stage("Check out"){
         steps{
     
         git credentialsId: 'madhursk', url: 'https://github.com/madhursk/AmdJul2020-Java.git', branch: 'master'
 }
         }
+        
+        
+       stage('Modify the database properties') {
+            steps {
+                echo 'Deploying the application ...'
+                 ansiblePlaybook(
+                        inventory: 'inventory.txt',
+                        playbook: 'ansible-playbook-sql.yml',
+                        disableHostKeyChecking: true,
+                        colorized: true
+                  )
+    }
+    }
     
      stage ('Build') {
       steps{
@@ -54,17 +68,7 @@ pipeline{
       }
     }
     
-    stage('Modify the database properties') {
-            steps {
-                echo 'Deploying the application ...'
-                 ansiblePlaybook(
-                        inventory: 'inventory.txt',
-                        playbook: 'ansible-playbook-sql.yml',
-                        disableHostKeyChecking: true,
-                        colorized: true
-                  )
-    }
-    }
+  
     
     
     
