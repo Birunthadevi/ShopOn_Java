@@ -1,0 +1,11 @@
+- name: Start a mysql container and link
+  hosts: test
+  docker_container:
+    name: mysql
+    image: mysql
+    networks:
+      - name: Link MySQL container
+        links:
+          - jenkins:jenkins
+        
+      
