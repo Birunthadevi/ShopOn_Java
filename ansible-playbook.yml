@@ -3,9 +3,9 @@
   docker_container:
     name: mysql
     image: mysql
-    networks:
-      - name: Link MySQL container
-        links:
-          - jenkins:jenkins
-        
+    env:
+      MYSQL_DATABASE: shopon
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root4312
+  shell: ./sm-shop/
       
