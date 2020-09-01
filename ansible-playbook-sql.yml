@@ -1,5 +1,5 @@
 - name: Replace the localhost entry with container name
-     replace:
+  replace:
         path: ./sm-shop/src/main/resources/database.properties
         regexp: '127.0.0.1'
         replace: 'database'
