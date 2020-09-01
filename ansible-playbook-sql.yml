@@ -1,4 +1,5 @@
-- name: Replace localhost entry
+- 
+  name: Replace localhost entry
   lineinfile:
     path: ./sm-shop/src/main/resources/database.properties
     regexp: '^db.jdbcUrl='
