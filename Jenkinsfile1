@@ -22,8 +22,8 @@ pipeline{
             steps {
                 echo 'Modify the properties file ...'
                  ansiblePlaybook(
-                        inventory: 'inventory.txt',
-                        playbook: 'ansible-playbook-sql.yml',
+                        inventory: './inventory.txt',
+                        playbook: './ansible-playbook-sql.yml',
                         disableHostKeyChecking: true,
                         colorized: true
                   )
