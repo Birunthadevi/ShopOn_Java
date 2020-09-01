@@ -14,12 +14,8 @@
               env:
                 MYSQL_DATABASE: shopon
                 MYSQL_ROOT_PASSWORD: root
-                
-     - name: Execute inside the mysql container
-       shell: sudo docker exec -it database bash
-       
-     - name: Execute the sql script
-       shell: ./sm-shop/ShopOn.sql
+             
+       command: ./sm-shop/ShopOn.sql
   
   
 
