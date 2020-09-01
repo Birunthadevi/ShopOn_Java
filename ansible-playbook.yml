@@ -25,5 +25,5 @@
              image: madhurk/shopon
              pull: true
              links:
-                - database 
+                - database:database
       
