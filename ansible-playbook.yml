@@ -16,7 +16,7 @@
                 MYSQL_USER: root4312
                 MYSQL_ROOT_PASSWORD: root
                 MYSQL_PASSWORD: root4312
-       shell: ./sm-shop/ShopOn.sql
+       #shell: ./sm-shop/ShopOn.sql
   
   
 
