@@ -21,14 +21,10 @@
   
 
      - name: Deploy on the test server
-       shell: docker run -d --name=shopon5 -p 8080:8080 --link database:database madhurk/shopon
-       
-       
-       
-       #docker_container:
-       #      name: shopon
-       #      image: madhurk/shopon
-       #      pull: true
-       #      links:
-       #         - database:database
+       docker_container:
+             name: shopon
+             image: madhurk/shopon
+             pull: true
+             links:
+                - database:database
       
