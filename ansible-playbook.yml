@@ -7,8 +7,8 @@
               name: database
               image: mysql
               state: started
-              ports:
-                   - 3306: 3306
+              exposed_ports:
+                   - 3306
               volumes:
                    - /var/lib/mysql:/var/lib/mysql  
               env:
