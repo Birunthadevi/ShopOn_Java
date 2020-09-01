@@ -1,6 +1,6 @@
 ---
  - name: Playbook 
-   hosts: localhost
+   hosts: test
    tasks: 
      - name: Run the mysql container
        docker_container:
@@ -21,10 +21,14 @@
   
 
      - name: Deploy on the test server
-       docker_container:
-             name: shopon
-             image: madhurk/shopon
-             pull: true
-             links:
-                - database:database
+       shell: docker run -d --name=shopon -p 8080:8080 --link database:database prabhavagrawal/shopon
+       
+       
+       
+       #docker_container:
+       #      name: shopon
+       #      image: madhurk/shopon
+       #      pull: true
+       #      links:
+       #         - database:database
       
