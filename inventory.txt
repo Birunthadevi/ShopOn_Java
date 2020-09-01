@@ -1,5 +1,5 @@
 [test]
-ansible_host=172.17.0.4 ansible_user=root ansible_ssh_pass=Passw0rd ansible_python_interpreter=/usr/bin/python3
+ansible_host=13.233.116.134 ansible_user=centos 
 
 [prod]
-aws ansible_host=52.91.128.157 ansible_user=ec2-user ansible_python_interpreter=/usr/bin/python3
+ansible_host=15.206.209.10 ansible_user=centos ansible_python_interpreter=/usr/bin/python3
