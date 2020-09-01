@@ -64,7 +64,8 @@ pipeline{
                         disableHostKeyChecking: true,
                         colorized: true
                   )
-    
+    }
+    }
     
       
         }
