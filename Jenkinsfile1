@@ -8,15 +8,7 @@ pipeline{
     registryCredential = 'madhurk'
     dockerImage = ''
   }
-    stages{
-    
-        stage("Check out"){
-        steps{
-    
-        git credentialsId: 'madhursk', url: 'https://github.com/madhursk/AmdJul2020-Java.git', branch: 'master'
-}
-        }
-        
+    stages{       
         
             stage('Modify the database properties') {
             steps {
