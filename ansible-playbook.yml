@@ -1,8 +1,6 @@
 - name: Playbook 
   hosts: test
-  tasks:
-    - name: Start the mysql container
-      docker_container:
+  docker_container:
               name: database
               image: mysql
               state: started
