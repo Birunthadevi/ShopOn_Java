@@ -21,7 +21,7 @@
   
 
      - name: Deploy on the test server
-       shell: docker run -d --name=shopon -p 8080:8080 --link database:database madhurk/shopon
+       shell: docker run -d --name=shopon5 -p 8080:8080 --link database:database madhurk/shopon
        
        
        
