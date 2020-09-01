@@ -14,7 +14,7 @@
               env:
                 MYSQL_DATABASE: shopon
                 MYSQL_ROOT_PASSWORD: root
-                MYSQL_ROOT_HOST: %
+                MYSQL_ROOT_HOST: '%'
              
      - name: Create a new database with name 'shopon'
        mysql_db:
