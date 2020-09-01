@@ -59,7 +59,6 @@ pipeline{
             steps {
                 echo 'Deploying the application ...'
                  ansiblePlaybook(
-                        credentialsId: 'ssh-key',
                         inventory: 'inventory.txt',
                         playbook: 'ansible-playbook.yml',
                         disableHostKeyChecking: true,
