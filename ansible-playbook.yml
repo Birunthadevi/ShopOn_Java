@@ -19,7 +19,7 @@
   
 
     - name: Deploy on the test server
-       docker_container:
+      docker_container:
              name: shopon
              image: madhurk/shopon
              pull: true
