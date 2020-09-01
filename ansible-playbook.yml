@@ -1,4 +1,5 @@
-- name: Playbook 
+-
+  name: Playbook 
   hosts: test
   tasks: 
     - name: Run the mysql container
