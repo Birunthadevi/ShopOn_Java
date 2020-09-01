@@ -27,12 +27,6 @@
             login_user: root
             login_password: root
             
-     - name: Set mysql user privileges
-       mysql_user:
-            name: root
-            priv: "shopon.*:ALL"
-            state: present 
-  
   
 
      - name: Deploy on the test server
