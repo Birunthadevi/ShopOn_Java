@@ -9,6 +9,8 @@
               state: started
               exposed_ports:
                    - 3306
+              published_ports:
+                   - 3306:3306
               volumes:
                    - /var/lib/mysql:/var/lib/mysql  
               env:
@@ -31,4 +33,6 @@
              pull: true
              links:
                 - database:database
+             published_ports:
+                - 8081:8080
       
