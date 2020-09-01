@@ -1,6 +1,5 @@
----
- - name: Ensure SELinux is set to enforcing mode
-   replace:
+- name: Replace the localhost entry with container name
+     replace:
         path: ./sm-shop/src/main/resources/database.properties
         regexp: '127.0.0.1'
         replace: 'database'
