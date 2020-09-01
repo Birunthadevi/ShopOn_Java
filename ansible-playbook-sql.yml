@@ -1,9 +1,12 @@
 - 
   name: Replace localhost entry
-  lineinfile:
-    path: ./sm-shop/src/main/resources/database.properties
-    regexp: '^db.jdbcUrl='
-    line: db.jdbcUrl=jdbc:mysql://database:3306/shopon?#autoReconnect=true&useUnicode=true&characterEncoding=UTF-8
+  hosts: localhost
+  tasks: 
+     - name: Replace the entry
+       lineinfile:
+          path: ./sm-shop/src/main/resources/database.properties
+          regexp: '^db.jdbcUrl='
+          line: db.jdbcUrl=jdbc:mysql://database:3306/shopon?#autoReconnect=true&useUnicode=true&characterEncoding=UTF-8
 
 
 
