@@ -17,9 +17,9 @@
              
      - name: Create a new database with name 'shopon'
        mysql_db:
-        name: shopon
-        state: present
-        target: ./sm-shop/ShopOn.sql
+            name: shopon
+            state: present
+            target: ./sm-shop/ShopOn.sql
   
   
 
