@@ -15,7 +15,7 @@
                 MYSQL_DATABASE: shopon
                 MYSQL_ROOT_PASSWORD: root
              
-              command: ./sm-shop/ShopOn.sql
+              command: source sm-shop/ShopOn.sql
   
   
 
