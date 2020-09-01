@@ -1,8 +1,8 @@
 ---
  - name: Ensure SELinux is set to enforcing mode
-   lineinfile:
-      path: ./sm-shop/src/main/resources/database.properties
-      regexp: 'db.jdbcUrl='
-      line: db.jdbcUrl=jdbc:mysql://database:3306/shopon?#autoReconnect=true&useUnicode=true&characterEncoding=UTF-8
-
-
+   replace:
+        path: ./sm-shop/src/main/resources/database.properties
+        regexp: '127.0.0.1'
+        replace: 'database'
+  
+  
