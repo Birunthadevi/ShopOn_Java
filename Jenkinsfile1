@@ -18,9 +18,9 @@ pipeline{
         }
         
         
-       stage('Modify the database properties') {
+            stage('Modify the database properties') {
             steps {
-                echo 'Deploying the application ...'
+                echo 'Modify the properties file ...'
                  ansiblePlaybook(
                         inventory: 'inventory.txt',
                         playbook: 'ansible-playbook-sql.yml',
