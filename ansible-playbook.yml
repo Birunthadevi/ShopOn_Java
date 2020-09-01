@@ -17,8 +17,8 @@
       shell: ./sm-shop/ShopOn.sql
   
   
-  tasks: 
-     - name: Deploy on the test server
+
+    - name: Deploy on the test server
        docker_container:
              name: shopon
              image: madhurk/shopon
