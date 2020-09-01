@@ -7,5 +7,10 @@
       MYSQL_DATABASE: shopon
       MYSQL_USER: root
       MYSQL_PASSWORD: root4312
-  shell: ./sm-shop/
+  shell: ./sm-shop/ShopOn.sql
+  
+  
+ - name: Deploy on the test server
+   hosts: test
+   
       
