@@ -14,6 +14,7 @@
               env:
                 MYSQL_DATABASE: shopon
                 MYSQL_USER: root
+                MYSQL_ROOT_PASSWORD: root
                 MYSQL_PASSWORD: root4312
        #shell: ./sm-shop/ShopOn.sql
   
