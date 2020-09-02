@@ -13,12 +13,13 @@
                    - 3306:3306
               volumes:
                    - /var/lib/mysql:/var/lib/mysql  
+                   - /etc/mysql:/etc/mysql/conf.d
               env:
                 MYSQL_DATABASE: shopon
                 MYSQL_ROOT_PASSWORD: root
                 MYSQL_ROOT_HOST: '%'
               
-              lower-case-table-names: 1
+              #lower-case-table-names: 1
              
      - name: Create a new database with name 'shopon'
        mysql_db:
