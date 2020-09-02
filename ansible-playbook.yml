@@ -13,7 +13,7 @@
                    - 3306:3306
               volumes:
                    - /var/lib/mysql:/var/lib/mysql  
-                   - /etc/mysql:/etc/mysql/conf.d
+                   #- /etc/mysql:/etc/mysql/conf.d
               env:
                 MYSQL_DATABASE: shopon
                 MYSQL_ROOT_PASSWORD: root
