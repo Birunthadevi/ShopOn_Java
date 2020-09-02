@@ -34,7 +34,10 @@
          password: shoponpwd
          priv: '*.*:ALL'
          state: present
-            
+         login_user: root
+         login_password: root
+    
+    
      - name: Deploy on the test server
        docker_container:
              name: shopon
