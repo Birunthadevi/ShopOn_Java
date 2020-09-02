@@ -7,6 +7,24 @@
           path: ./sm-shop/src/main/resources/database.properties
           regexp: '^db.jdbcUrl='
           line: db.jdbcUrl=jdbc:mysql://database:3306/shopon?#autoReconnect=true&useUnicode=true&characterEncoding=UTF-8
+          
+     - name: Replace user root with shopon
+       lineinfile:
+          path: ./sm-shop/src/main/resources/database.properties
+          regexp: '^db.user='
+          line: db.user=shopon
+          
+     - name: Replace password
+       lineinfile:
+          path: ./sm-shop/src/main/resources/database.properties
+          regexp: '^db.password='
+          line: db.password=shoponpwd
+          
+          
+      
+     
+          
+   
 
 
 
