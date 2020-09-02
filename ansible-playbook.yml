@@ -16,14 +16,14 @@
               env:
                 MYSQL_DATABASE: shopon
                 MYSQL_ROOT_PASSWORD: root
-                MYSQL_ROOT_HOST: '0.0.0.0'
+                MYSQL_ROOT_HOST: '%'
              
      - name: Create a new database with name 'shopon'
        mysql_db:
             name: shopon
             state: present
             target: ./sm-shop/ShopOn.sql
-            login_host: '0.0.0.0'
+            #login_host: '0.0.0.0'
             login_user: root
             login_password: root
             
@@ -37,7 +37,7 @@
          login_user: root
          login_password: root
          #login_host: '0.0.0.0'
-         login_host: '%'
+         #login_host: '%'
     
     
      - name: Deploy on the test server
