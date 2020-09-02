@@ -23,7 +23,7 @@
              
      - name: Create a new database with name 'shopon'
        mysql_db:
-            login_unix_socket: /var/lib/mysql/mysql.sock
+            #login_unix_socket: /var/lib/mysql/mysql.sock
             name: shopon
             state: present
             target: ./sm-shop/ShopOn.sql
