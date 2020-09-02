@@ -30,7 +30,7 @@
      - name: Create database user with name 'shopon' and password 'shoponpwd' with all database privileges
        mysql_user:
          name: shopon
-         host: localhost
+         host: '%'
          password: shoponpwd
          priv: '*.*:ALL'
          state: present
