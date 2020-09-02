@@ -36,7 +36,8 @@
          state: present
          login_user: root
          login_password: root
-         login_host: '0.0.0.0'
+         #login_host: '0.0.0.0'
+         login_host: '%'
     
     
      - name: Deploy on the test server
