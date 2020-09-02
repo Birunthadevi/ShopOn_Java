@@ -32,7 +32,7 @@
          name: shopon
          host: localhost
          password: shoponpwd
-         priv: '.:ALL'
+         priv: '*.*:ALL'
          state: present
             
      - name: Deploy on the test server
