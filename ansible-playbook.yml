@@ -23,7 +23,7 @@
             name: shopon
             state: present
             target: ./sm-shop/ShopOn.sql
-            login_host: localhost
+            #login_host: localhost
             login_user: root
             login_password: root
             
