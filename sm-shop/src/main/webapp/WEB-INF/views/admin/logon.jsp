@@ -314,9 +314,8 @@
 								<s:message code="button.label.logon" text="Logon" />
 							</p>
 						</div>
-						<div style="float: right;">
-							<img alt="go to www.shopizer.com"
-								src="<c:url value="/resources/img/shopizer_small.png" />">
+							<div style="float: right;height: 40px;">
+							<img alt="ShopOn" src="/resources/img/shopOn.PNG" style="    height: 50px;">
 						</div>
 					</div>
 

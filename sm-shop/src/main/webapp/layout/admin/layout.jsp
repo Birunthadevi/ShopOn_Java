@@ -59,7 +59,7 @@ response.setDateHeader ("Expires", -1);
 
 		<div class="row">
 
-  			<div class="span4"><a class="brand" href="#"><img src="<c:url value="/resources/img/shopizer_small.jpg" />"/></a></div>
+  			<div class="span4"><a class="brand" href="#"><img src="<c:url value="/resources/img/shopOn.PNG" />"/></a></div>
 
   			<div class="span4 offset4">
 
@@ -163,7 +163,11 @@ response.setDateHeader ("Expires", -1);
   
   
 		<footer> 
- 			<p>&copy; Shopizer 2010-<%=Calendar.getInstance().get(Calendar.YEAR)%></p> 
+		
+			<div class="span12 text">&copy;&nbsp;<s:message code="label.generic.providedby" /> 
+		<a href="https://www.skillassure.com/" class="footer-href" target="_blank">SkillAssure</div>
+		
+ 		<%-- 	<p>&copy; Shopizer 2010-<%=Calendar.getInstance().get(Calendar.YEAR)%></p>  --%>
 		</footer> 
   
   
