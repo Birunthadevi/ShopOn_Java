@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-
+<%@ taglib uri="/WEB-INF/shopizer-tags.tld" prefix="sm" %>
 <%@ page session="false" %>
 
     <!-- Le styles -->
@@ -11,7 +11,14 @@
     <link href="<c:url value="/resources/css/bootstrap/css/sm-bootstrap-responsive.css" />" rel="stylesheet">
     
  
- 
+ <c:choose>
+		<c:when test="${requestScope.CONTENT['favicon']!=null}">
+			<sm:pageContent contentCode="favicon"/>
+		</c:when>
+		<c:otherwise>
+			<link rel="icon" href="<c:url value="/resources/templates/december/img/favicon.ico"/>"> 
+		</c:otherwise>
+		</c:choose> 
 
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
