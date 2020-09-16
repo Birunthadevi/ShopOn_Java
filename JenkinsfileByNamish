@@ -10,7 +10,6 @@ pipeline {
             steps {
                echo "This is Build"
                 bat '''
-		cd sm-shop
                 mvn clean install
                 '''
             }
@@ -20,7 +19,6 @@ pipeline {
             steps {
               echo "This is Testing"
                 bat '''
-		cd sm-shop
                  mvn -B verify
                  '''
             }
