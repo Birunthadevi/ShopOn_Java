@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+     tools {
+        maven 'MAVEN_HOME'
+        jdk 'JAVA_HOME'
+    }
+    stages {
+    
+        stage('Build') {
+            steps {
+               echo "This is Build"
+                bat '''
+                mvn clean install
+                '''
+            }
+        }
+        
+        stage('Test') {
+            steps {
+              echo "This is Testing"
+                bat '''
+                 mvn -B verify
+                 '''
+            }
+        }
+        
+        stage('Deploy') {
+			steps {
+				echo "Deploying"
+				deploy adapters: [tomcat7(credentialsId: '917daa62-2304-43cb-921a-280e435babbe', path: '', url: 'http://localhost:8080')], contextPath: 'ShopOn', war: '**/*.war'
+		    }
+	    }
+
+    }
+}
