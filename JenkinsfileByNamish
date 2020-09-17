@@ -14,7 +14,12 @@ pipeline {
                 '''
             }
         }
-        
+        stage ('Archive') {
+      	    steps{
+        	echo "Archiving Project"
+        	archiveArtifacts artifacts: '**/*.war', followSymlinks: false
+      	    }
+    	}
         stage('Test') {
             steps {
               echo "This is Testing"
