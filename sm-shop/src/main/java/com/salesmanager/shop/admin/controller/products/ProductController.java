@@ -155,7 +155,7 @@ public class ProductController {
 			
 			product.setProduct(dbProduct);
 			Set<ProductDescription> productDescriptions = dbProduct.getDescriptions();
-			
+						
 			for(Language l : languages) {
 				
 				ProductDescription productDesc = null;
@@ -176,6 +176,15 @@ public class ProductController {
 				descriptions.add(productDesc);
 				
 			}
+			
+//			LOGGER.info("descriptions after for");
+//			for(ProductDescription pd : descriptions) {
+//				System.out.println("pd.getDescription():" + pd.getDescription());
+//				System.out.println("pd.getName(): " + pd.getName());
+//				System.out.println("pd.getTitle():" + pd.getTitle());
+//				System.out.println("pd.getLanguage().getCode(): " + pd.getLanguage().getCode());
+//				System.out.println(pd.toString());
+//			}
 			
 			for(ProductImage image : dbProduct.getImages()) {
 				if(image.isDefaultImage()) {
@@ -285,7 +294,7 @@ public class ProductController {
 		model.addAttribute("taxClasses", taxClasses);
 		
 		boolean productAlreadyExists = false;
-		if (!StringUtils.isBlank(product.getProduct().getSku())) {
+		if (!StringUtils.isBlank(product.getProduct().getSku()) && product.getProduct().getId()==null) {
 			try {
 				Product productByCode = productService.getByCode(product.getProduct().getSku(),language);
 				productAlreadyExists = productByCode != null;
@@ -491,9 +500,11 @@ public class ProductController {
 		if(product.getDescriptions()!=null && product.getDescriptions().size()>0) {
 			
 			for(ProductDescription description : product.getDescriptions()) {
-				description.setProduct(newProduct);
-				descriptions.add(description);
 				
+				if(!StringUtils.isBlank(description.getName()) && !StringUtils.isBlank(description.getSeUrl())) {
+					description.setProduct(newProduct);
+					descriptions.add(description);
+				}
 			}
 		}
 		
