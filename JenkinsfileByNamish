@@ -19,16 +19,7 @@ pipeline {
         	echo "Archiving Project"
         	archiveArtifacts artifacts: '**/*.war', followSymlinks: false
       	    }
-    	}
-        /*stage('Test') {
-            steps {
-              echo "This is Testing"
-                bat '''
-                 mvn -B verify
-                 '''
-            }
-        }*/
-        
+    	}       
         stage('Deploy') {
 			steps {
 				echo "Deploying"
