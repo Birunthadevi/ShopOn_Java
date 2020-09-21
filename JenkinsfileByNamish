@@ -26,4 +26,3 @@ stage('Deploy') {
 		deploy adapters: [tomcat9(credentialsId: '055f2355-243e-4ffe-8b3b-8c90beab6f98', path: '', url: 'http://localhost:8080')], contextPath: 'FinalShopOn', war: '**/*.war'
 	    }
     }
-}
