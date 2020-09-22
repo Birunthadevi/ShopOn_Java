@@ -292,12 +292,13 @@ public class UserController {
 		//get groups
 		List<Group> groups = new ArrayList<Group>();
 		List<Group> userGroups = groupService.listGroup(GroupType.ADMIN);
+		userGroups.addAll(groupService.listGroup(GroupType.CUSTOMER));
+	
 		for(Group group : userGroups) {
 			if(!group.getGroupName().equals(Constants.GROUP_SUPERADMIN)) {
 				groups.add(group);
 			}
-		}
-		
+		}		
 		
 		List<MerchantStore> stores = new ArrayList<MerchantStore>();
 		//stores.add(store);

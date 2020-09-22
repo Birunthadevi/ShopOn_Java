@@ -216,9 +216,9 @@ public class GroupsController {
 		List<String> groups = new ArrayList<String>();
 
 		for(GroupType t : groupTypes) {
-			if(GroupType.ADMIN.name() != t.name()) {
+			//if(GroupType.ADMIN.name() != t.name()) {
 				groups.add(t.name());
-			}
+		//	}
 		}
 		GroupDetails group = new GroupDetails();
 		Group g = new Group();
