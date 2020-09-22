@@ -9,7 +9,7 @@ pipeline {
     stage ('Build') {
       steps{
         echo "Building Project"
-        sh 'mvn package -DskipTests'
+        bat '''mvn package -DskipTests'''
       }
     }
     stage ('Archive') {
@@ -40,8 +40,8 @@ pipeline {
     stage ('Deploy to Dev') {
       steps{
         echo "Deploying to Dev Environment"
-        sh "docker rm -f shopon || true"
-        sh "docker run -d --name=shopon -p 8080:8080 namishjain253/shopon"
+        bat '''docker rm -f shopon || true'''
+        bat '''docker run -d --name=shopon -p 8080:8080 namishjain253/shopon'''
       }
     }
   }
