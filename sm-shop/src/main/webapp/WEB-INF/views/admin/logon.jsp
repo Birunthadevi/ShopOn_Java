@@ -13,7 +13,7 @@
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 	<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
 	<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-
+<%@ taglib uri="/WEB-INF/shopizer-tags.tld" prefix="sm" %>
 	<%@page contentType="text/html"%>
 	<%@page pageEncoding="UTF-8"%>
 
@@ -276,7 +276,14 @@
 					});
 </script>
 	</head>
-
+<c:choose>
+		<c:when test="${requestScope.CONTENT['favicon']!=null}">
+			<sm:pageContent contentCode="favicon"/>
+		</c:when>
+		<c:otherwise>
+			<link rel="icon" href="<c:url value="/resources/templates/december/img/favicon.ico"/>"> 
+		</c:otherwise>
+		</c:choose> 
 	<body>
 
 		<div id="tabbable" class="sm">

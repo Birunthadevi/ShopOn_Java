@@ -502,6 +502,7 @@ public class ShippingServiceImpl implements ShippingService {
 			
 			//free shipping ?
 			boolean freeShipping = false;
+			//shippingConfiguration.setFreeShippingEnabled(false);
 			if(shippingConfiguration.isFreeShippingEnabled()) {
 				BigDecimal freeShippingAmount = shippingConfiguration.getOrderTotalFreeShipping();
 				if(freeShippingAmount!=null) {
